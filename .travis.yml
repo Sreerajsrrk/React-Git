@@ -4,7 +4,7 @@ services:
   - "docker"
 
 before_install:
-  -docker build -t sreeraj510105/react-git -f Dockerfile.dev .
+  - docker build -t sreeraj510105/react-git -f Dockerfile.dev .
 
 script:
-  docker run -e CI=true sreeraj510105/react-git npm run test 
+  - docker run -e CI=true sreeraj510105/react-git npm run test 
